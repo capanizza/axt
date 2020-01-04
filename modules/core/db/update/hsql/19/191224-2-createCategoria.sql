@@ -1,0 +1,1 @@
+create unique index IDX_AXT_CATEGORIA_UNIQ_CODIGO on AXT_CATEGORIA (CODIGO) ;
