@@ -17,10 +17,14 @@ public class Categoria extends BaseLongIdEntity implements HasUuid {
     @Column(name = "UUID")
     protected UUID uuid;
 
-    @NumberFormat(pattern = "###0")
+    @NumberFormat(pattern = "##0")
     @NotNull
-    @Column(name = "CODIGO", nullable = false, unique = true)
+    @Column(name = "CODIGO", nullable = false)
     protected Integer codigo;
+
+    @NotNull
+    @Column(name = "DESCRICAO", nullable = false)
+    protected String descricao;
 
     public UUID getUuid() {
         return uuid;
@@ -36,5 +40,13 @@ public class Categoria extends BaseLongIdEntity implements HasUuid {
 
     public void setCodigo(Integer codigo) {
         this.codigo = codigo;
+    }
+
+    public String getDescricao() {
+        return descricao;
+    }
+
+    public void setDescricao(String descricao) {
+        this.descricao = descricao;
     }
 }

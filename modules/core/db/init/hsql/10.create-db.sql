@@ -4,6 +4,7 @@ create table AXT_CATEGORIA (
     UUID varchar(36),
     --
     CODIGO integer not null,
+    DESCRICAO varchar(255) not null,
     --
     primary key (ID)
 )^

@@ -1,0 +1,1 @@
+drop index IDX_AXT_CATEGORIA_UNIQ_CODIGO ;

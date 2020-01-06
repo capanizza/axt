@@ -39,6 +39,7 @@
                     </actions>
                     <columns>
                         <column id="codigo"/>
+                        <column id="descricao"/>
                     </columns>
                     <rowsCount/>
                     <buttonsPanel id="buttonsPanel"
@@ -58,6 +59,7 @@
                     <form id="form" dataContainer="categoriaDc">
                         <column width="250px">
                             <textField id="codigoField" property="codigo"/>
+                            <textField id="descricaoField" property="descricao"/>
                         </column>
                     </form>
                 </scrollBox>
